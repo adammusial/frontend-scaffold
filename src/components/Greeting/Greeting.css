@@ -1,0 +1,14 @@
+.Greeting {
+  img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+  }
+
+  text-align: center;
+  font-size: 6vw;
+  font-family: "Optima", sans-serif;
+  font-style: italic;
+}

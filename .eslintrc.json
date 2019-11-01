@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb", "plugin:react/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "react/state-in-constructor": ["error", "never"]
+  },
+  "parser": "babel-eslint",
+  "overrides": [
+    {
+      "files": ["*.config.js"],
+      "env": {
+        "node": true
+      }
+    },
+    {
+      "files": ["*.test.js"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
